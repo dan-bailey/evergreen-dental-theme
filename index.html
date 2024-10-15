@@ -12,8 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body class="bg-offwhite font-raleway">
-    <nav class="bg-forest text-offwhite sm:p-0 md:p-4">This is the nav area.</nav>
-    <p class="text-lg">Viewport size: 
+    <nav class="bg-forest text-offwhite hidden md:block md:sticky">
+        <div class="p-4 flex flex-row flex-nowrap items-center place-content-between">
+            <div>Logo</div>
+            <div>
+                <ul class="flex flex-row flex-nowrap items-center place-content-between">
+                    <li class="inline-block my-2 menu-item">Home</li>
+                    <li class="inline-block my-2 menu-item">About</li>
+                    <li class="inline-block my-2 menu-item">Services</li>
+                    <li class="inline-block my-2 menu-item">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <nav class="bg-forest text-offwhite block md:hidden">This is the mobile nav area.</nav>
+
+    <!-- a little kludge to show tailwind viewport size -->
+    <p class="text-lg p-4">Viewport size: 
         <span class="inline-block sm:hidden">XS</span>
         <span class="hidden sm:inline-block md:hidden">SM</span>
         <span class="hidden md:inline-block lg:hidden">MD</span>
