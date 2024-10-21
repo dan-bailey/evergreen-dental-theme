@@ -2,9 +2,7 @@
 WP theme for freelance client.
 
 # to-do list
-* top nav, including hamburger and search
+* top nav
 * footer
-* typography
 * hero slideshow
 * people grid
-* search results
