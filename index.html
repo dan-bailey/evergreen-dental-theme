@@ -6,10 +6,13 @@
     <title>EGD</title>
     <!-- CSS Compiled from Tailwind -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- necessary javascript -->
+    <script src="./assets/js/menu.js"></script>
     <!-- Google Web Fonts: Raleway & Cabin -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Raleway&display=swap" rel="stylesheet">
+    <!-- all the metas -->
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -28,27 +31,61 @@
 
 </head>
 <body class="bg-offwhite font-raleway">
-    <nav class="bg-forest text-offwhite hidden md:block md:sticky">
-        <div class="px-4 py-0 flex flex-row flex-nowrap items-center place-content-between">
-            <div>Logo</div>
-            <div>
-                <ul class="flex flex-row flex-nowrap items-stretch place-content-between">
-                    <li class="inline-block mx-4 p-4 menu-item">Home</li>
-                    <li class="inline-block mx-4 p-4 menu-item">About</li>
-                    <li class="inline-block mx-4 p-4 menu-item">Services</li>
-                    <li class="inline-block mx-4 p-4 menu-item">Contact</li>
-                </ul>
+    <nav class="bg-forest text-offwhite">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-offwhite hover:text-offwhite hover:bg-mint focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex-1 flex items-center justify-between">
+                    <div class="flex-shrink-0 md:inline-block lg:hidden">
+                        <a href="/"><img src="./assets/img/tooth_white.svg" alt="" class="block h-12 pl-1"></a>
+                    </div>
+                    <div class="flex-shrink-0 hidden lg:block">
+                        <a href="/"><img src="./assets/img/tooth_white_full.svg" alt="" class="block h-12 pl-1"></a>
+                    </div>
+                    <div class="hidden sm:block sm:ml-6">
+                        <div class="flex items-center space-x-4">
+                            <a href="/" class="inline-block text-offwhite hover:border-1 hover:border-offwhite hover:text-offwhite px-3 py-2 rounded-md text-md font-medium">Home</a>
+                            <div class="relative">
+                                <button id="dropdown-button" class="text-offwhite hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</button>
+                                <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10">
+                                    <a href="/service1" class="block px-4 py-2 text-offwhite hover:bg-gray-200">Service 1</a>
+                                    <a href="/service2" class="block px-4 py-2 text-offwhite hover:bg-gray-200">Service 2</a>
+                                    <a href="/service3" class="block px-4 py-2 text-offwhite hover:bg-gray-200">Service 3</a>
+                                </div>
+                            </div>
+                            <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                            <a href="/contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                            <a href="/"><button class="text-blackish bg-mint hover:bg-latte py-1 px-2 md:py-3 md:px-6 ">Make a Payment</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
+    <div class="sm:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="/contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        </div>
+    </div>
     <main>
 
     </main>
     <footer>
 
     </footer>
-
-    <nav class="bg-forest text-offwhite block md:hidden">This is the mobile nav area.</nav>
 
     <!-- a little kludge to show tailwind viewport size -->
     <p class="text-lg p-4">Viewport size: 
