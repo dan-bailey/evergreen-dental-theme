@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html", "./index2.html"],
+  content: ["./src/**/*.{html,js}", "./index.html", "./node_modules/flowbite/**/*.js"],
   theme: {
     colors: {
       'forest': '#114e35',
@@ -12,9 +12,11 @@ module.exports = {
     },
     fontFamily: {
       cabin: ['Cabin', 'Arial', 'sans-serif'],
-      'raleway': ['Raleway', 'Helvetica', 'Roboto', 'sans-serif'],
+      raleway: ['Raleway', 'Helvetica', 'Roboto', 'sans-serif'],
     }
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
