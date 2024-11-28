@@ -8,7 +8,8 @@ module.exports = {
       'latte': '#cca77c',
       'steel': '#d9d9d9',
       'blackish': '#040c1c',
-      'offwhite': '#f3f3f3'
+      'offwhite': '#f3f3f3',
+      'skyblue': '#6cd3f0',
     },
     fontFamily: {
       cabin: ['Cabin', 'Arial', 'sans-serif'],

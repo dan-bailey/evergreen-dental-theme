@@ -13,12 +13,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pay-button {
-    @apply font-cabin text-blackish bg-mint hover:bg-latte font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center
+    @apply font-cabin bg-skyblue hover:bg-mint text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center
 }
 
 .dropdown-menu {
     @apply font-cabin z-10 hidden bg-offwhite divide-y divide-gray-100 rounded-lg shadow w-44
 }
-
 
 /***** CAROUSEL STYLES *****/
