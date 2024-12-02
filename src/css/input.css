@@ -3,10 +3,41 @@
 @tailwind utilities;
 
 h1, h2, h3, h4, h5, h6 {
-    @apply font-cabin;
+    @apply font-cabin inline-block pb-4;
 }
 
-/* DESKTOP MENU ITEMS */
-.menu-item {
-    @apply font-cabin hover:bg-mint hover:text-blackish
+h1 {
+    @apply text-5xl;
 }
+
+h2 {
+    @apply text-4xl font-cabin inline-block pb-4;
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+li {
+    @apply list-disc;
+}
+
+/***** DESKTOP MENU ITEMS *****/
+
+.nav-button {
+    @apply font-cabin text-offwhite bg-forest hover:bg-mint hover:text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center
+}
+
+.pay-button {
+    @apply font-cabin bg-skyblue hover:bg-mint text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center
+}
+
+.footer-link-button {
+    @apply font-cabin border border-white text-offwhite hover:text-forest hover:bg-offwhite font-medium text-base rounded-lg text-base px-5 py-2.5 text-center
+}
+
+.dropdown-menu {
+    @apply font-cabin z-10 hidden bg-offwhite divide-y divide-gray-100 rounded-lg shadow w-44
+}
+
+/***** CAROUSEL STYLES *****/

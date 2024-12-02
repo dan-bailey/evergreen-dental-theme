@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Raleway&display=swap" rel="stylesheet">
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css">
+
     <!-- all the metas -->
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -20,17 +24,18 @@
     <meta name="revisit-after" content="7 days">
     <meta name="language" content="English">
     <meta name="distribution" content="global">
-    <meta property="og:title" content="The Rock" />
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
-    <meta name="twitter:title" content="European Travel Destinations ">
-    <meta name="twitter:description" content=" Offering tour packages for individuals or groups.">
-    <meta name="twitter:image" content=" http://euro-travel-example.com/thumbnail.jpg">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
     <meta name="twitter:card" content="summary_large_image">
 
 </head>
 <body class="bg-offwhite font-raleway">
+
     <nav class="bg-forest text-offwhite">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16">
@@ -46,56 +51,137 @@
                         </svg>
                     </button>
                 </div>
+
                 <div class="flex-1 flex items-center justify-between">
+                    <!-- logo space -->
                     <div class="flex-shrink-0 md:inline-block lg:hidden">
                         <a href="/"><img src="./assets/img/tooth_white.svg" alt="" class="block h-12 pl-1"></a>
                     </div>
                     <div class="flex-shrink-0 hidden lg:block">
                         <a href="/"><img src="./assets/img/tooth_white_full.svg" alt="" class="block h-12 pl-1"></a>
                     </div>
-                    <div class="hidden sm:block sm:ml-6">
-                        <div class="flex items-center space-x-4">
-                            <a href="/" class="inline-block text-offwhite hover:border-1 hover:border-offwhite hover:text-offwhite px-3 py-2 rounded-md text-md font-medium">Home</a>
-                            <div class="relative">
-                                <button id="dropdown-button" class="text-offwhite hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</button>
-                                <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10">
-                                    <a href="/service1" class="block px-4 py-2 text-offwhite hover:bg-gray-200">Service 1</a>
-                                    <a href="/service2" class="block px-4 py-2 text-offwhite hover:bg-gray-200">Service 2</a>
-                                    <a href="/service3" class="block px-4 py-2 text-offwhite hover:bg-gray-200">Service 3</a>
-                                </div>
-                            </div>
-                            <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-                            <a href="/contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-                            <a href="/"><button class="text-blackish bg-mint hover:bg-latte py-1 px-2 md:py-3 md:px-6 ">Make a Payment</button></a>
-                        </div>
+                    <!-- /logo space -->
+                    <div id="desktop-menu" class="hidden sm:block sm:ml-6">
+                        <a href="team.html" class="nav-button">Our Team</a>
+                        <a href="services.html" class="nav-button">Services</a>
+                        <a href="office.html" class="nav-button">Office</a>
+                        <a href="patients.html" class="nav-button">New Patients</a>
+                        <a href="appointment.html" class="nav-button">Appointments</a>
+                        <a href="https://pay.balancecollect.com/m/evergreendentalmn" class="pay-button hidden md:visible">Make a Payment</a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="sm:hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-            <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-            <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-            <a href="/contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-        </div>
+    <div class="hidden container mx-auto p-12 flex flex-col space-y-4 items-center justify-center w-max h-max bg-forest font-6xl z-10" id="mobile-menu">
+            <a href="team.html" class="block p-4 rounded-lg text-offwhite hover:bg-mint hover:text-blackish">Our Team</a>
+            <a href="services.html" class="block p-4 rounded-lg text-offwhite hover:bg-mint hover:text-blackish">Services</a>
+            <a href="office.html" class="block p-4 rounded-lg text-offwhite hover:bg-mint hover:text-blackish">Office</a>
+            <a href="patients.html" class="block p-4 rounded-lg text-offwhite hover:bg-mint hover:text-blackish">New Patients</a>
+            <a href="appointment.html" class="block p-4 rounded-lg text-offwhite hover:bg-mint hover:text-blackish">Appointments</a>
+            <a href="https://pay.balancecollect.com/m/evergreendentalmn" class="block p-4 rounded-lg text-blackish bg-skyblue hover:bg-mint">Make a Payment</a>
     </div>
     <main>
-
+        <!-- /the slider -->
+        <div id="default-carousel" class="hidden md:block relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative overflow-hidden md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-900 ease-in-out" data-carousel-item>
+                    <img src="./assets/img/slider_office.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-900 ease-in-out" data-carousel-item>
+                    <img src="./assets/img/slider_team.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="hidden md:block absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="hidden md:block absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="hidden md:block absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+        <!-- /the slider-->
+        <!-- homepage content -->
+        <div class="container mx-auto my-6">
+            <div class="w-2/3 p-8 mx-auto rounded-xl bg-mint text-blackish">
+                <h2>Our Philosophy</h2>
+                <p class="text-xl"><Our practice is dedicated to providing quality dental care in a comfortable and safe environment while building meaningful relationships as your dental home.</p>
+                <p class="text-xl">Our experienced team is committed to:</p>
+                <ul class="text-lg list-disc ml-8 my-2">
+                    <li>Listening to those we have the privilege to serve.</li>
+                    <li>Earning the trust and respect of patients, profession and community through honest treatment integrity.</li>
+                    <li>Learning about new technology and advancements in dentistry.</li>
+                    <li>Helping you reach your oral health goals.</li>
+                </ul>
+                <p class="text-lg">We love to keep you and your family smiling for your lifetime!</p>
+                <p class="text-lg bold">Thank you for choosing us as your dental home.</p>
+            </div>
+        </div>
+        <div class="container mx-auto my-6">
+            <h2 class="text-2xl mb-3">Follow Us on Instagram</h2>
+            <div class="flex flex-row justify-between items-center">
+                <img src="./assets/img/ig1.png" alt="Instagram 1" class="w-1/5">
+                <img src="./assets/img/ig2.png" alt="Instagram 2" class="w-1/5">
+                <img src="./assets/img/ig3.png" alt="Instagram 3" class="w-1/5">
+                <img src="./assets/img/ig4.png" alt="Instagram 4" class="w-1/5">
+            </div>
+        </div>
+        <!-- /homepage content -->
     </main>
     <footer>
-
+        <div class="container mx-auto text-center my-12">
+            <a href="https://pay.balancecollect.com/m/evergreendentalmn" class="pay-button mx-auto">Make a Payment</a>
+        </div>
+        <div class="container mx-auto flex flex-col md:flex-row justify-end self-end md:justify-between items-center space-y-6 md:space-y-0 p-4 bg-offwhite">
+            <img class="h-12 mt-0" src="./assets/img/american-dental-association-logo.svg" alt="American Dental Association" />
+            <img class="h-12 mt-0" src="./assets/img/top_dentist_hof.svg" alt="Twin Cities Top Dentist Hall of Fame" />
+            <img class="h-12 mt-0" src="./assets/img/agf-logo.svg" alt="Academy of General Dentistry" />
+        </div>
+        <div class="bg-forest">
+            <div class="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center space-y-6 p-4 bg-forest">
+                <div>
+                    <p class="text-offwhite text-left md:text-center">Evergreen Dental<br>
+                    7890 Mitchell Road<br>
+                    Eden Prairie, MN 55344<br><br>
+                    TEL: <a href="tel:9529377677">952-937-7677</a><br>
+                    FAX: 952-937-0232<br>
+                    <a href="mailto:smile@evergreendentalmn.com">smile@evergreendentalmn.com</a></p>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-4 p-4">
+                    <div class="flex flex-row justify-between items-center space-x-6 p-4">
+                        <a href="https://www.instagram.com/evergreendentalmn" target="_blank"><img src="./assets/img/instagram.svg" alt="Instagram" class="h-8 w-8"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100063811981573" target="_blank"></a><img src="./assets/img/facebook.svg" alt="Facebook" class="h-8 w-8"></a>
+                    </div>
+                    <div class="text-offwhite">
+                        <a class="footer-link-button" href="https://www.patientconnect365.com/Dentists/Minnesota/EdenPrairie/55344/Evergreen_Dental#" target="_blank">Patient Reviews</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </footer>
 
-    <!-- a little kludge to show tailwind viewport size -->
-    <p class="text-lg p-4">Viewport size: 
-        <span class="inline-block sm:hidden">XS</span>
-        <span class="hidden sm:inline-block md:hidden">SM</span>
-        <span class="hidden md:inline-block lg:hidden">MD</span>
-        <span class="hidden lg:inline-block xl:hidden">LG</span>
-        <span class="hidden xl:inline-block 2xl:hidden">XL</span>
-        <span class="hidden 2xl:inline-block">2XL</span>
-    </p>
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
