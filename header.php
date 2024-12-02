@@ -1,28 +1,55 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> <?php blankslate_schema_type(); ?>>
+<html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width">
-<?php wp_head(); ?>
+    <title><?php wp_title(''); ?></title>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Canonical URL -->
+    <?php 
+        if (get_field('canonical_tag')) {
+            echo '<link rel="canonical" href="' . get_field('canonical_tag') . '">';
+        } else {
+            echo '<link rel="canonical" href="' . get_permalink() . '">';
+        }
+    ?>
+
+    <!-- CSS Compiled from Tailwind -->
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/style.css">
+    <!-- necessary javascript -->
+    <script src="<?php bloginfo('template_url'); ?>/assets/js/menu.js"></script>
+    
+    <!-- Google Web Fonts: Raleway & Cabin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Raleway&display=swap" rel="stylesheet">
+    
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css">
+
+    <!-- all the metas -->
+    <?php 
+        if (get_field('social_image')) {
+            $img = get_field('social_image');
+        } else {
+            $img = get_the_post_thumbnail( get_the_ID(), 'large' );
+        }
+    ?>
+    <meta name="description" content="<?php echo get_field('meta_description'); ?>" />
+    <meta name="keywords" content="<?php echo get_field('meta_keywords'); ?>" />
+    <meta name="author" content="<?php echo get_the_author_meta('display_name'); ?>" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="language" content="English" />
+    <meta name="distribution" content="global" />
+    <meta property="og:title" content="<?php echo get_field('social_title'); ?>" />
+    <meta property="og:url" content="<?php echo get_permalink(); ?>" />
+    <meta property="og:image" content="<?php echo get_field('social_image'); ?>" />
+    <meta name="twitter:title" content="<?php echo get_field('social_title'); ?>" />
+    <meta name="twitter:description" content="<?php echo get_field('social_description'); ?>" />
+    <meta name="twitter:image" content="<?php echo get_field('social_image'); ?>" />
+    <meta name="twitter:card" content="summary_large_image" />
+
 </head>
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="wrapper" class="hfeed">
-<header id="header" role="banner">
-<div id="branding">
-<div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<?php
-if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; }
-echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home" itemprop="url"><span itemprop="name">' . esc_html( get_bloginfo( 'name' ) ) . '</span></a>';
-if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; }
-?>
-</div>
-<div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
-</div>
-<nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
-<div id="search"><?php get_search_form(); ?></div>
-</nav>
-</header>
-<div id="container">
-<main id="content" role="main">
+
+
