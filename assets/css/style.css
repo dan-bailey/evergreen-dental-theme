@@ -1277,6 +1277,10 @@ input:checked + .toggle-bg {
   height: max-content;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1684,10 +1688,6 @@ input:checked + .toggle-bg {
   text-align: center;
 }
 
-.font-raleway {
-  font-family: Raleway, Helvetica, Roboto, sans-serif;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1827,6 +1827,16 @@ input:checked + .toggle-bg {
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
+  font-family: Raleway, Helvetica, Roboto, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(4 12 28 / var(--tw-text-opacity));
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2190,18 +2200,6 @@ li {
 }
 
 @media (min-width: 640px) {
-  .sm\:ml-6 {
-    margin-left: 1.5rem;
-  }
-
-  .sm\:block {
-    display: block;
-  }
-
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -2209,16 +2207,8 @@ li {
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:block {
     display: block;
-  }
-
-  .md\:inline-block {
-    display: inline-block;
   }
 
   .md\:h-96 {
@@ -2245,14 +2235,6 @@ li {
 }
 
 @media (min-width: 1024px) {
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:hidden {
-    display: none;
-  }
-
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
