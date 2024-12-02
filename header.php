@@ -4,6 +4,11 @@
     <title><?php wp_title(''); ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+        $a = get_field( 'favicon', 'options' );
+    ?>
+    <link rel="shortcut icon" href="<?php echo get_field('favicon', 'options'); ?>" type="image/x-icon" />
+
     <!-- Canonical URL -->
     <?php 
         if (get_field('canonical_tag')) {
@@ -39,7 +44,7 @@
     <meta name="keywords" content="<?php echo get_field('meta_keywords'); ?>" />
     <meta name="author" content="<?php echo get_the_author_meta('display_name'); ?>" />
     <meta name="robots" content="index, follow" />
-    <meta name="revisit-after" content="7 days" />
+    <meta name="revisit-after" content="10 days" />
     <meta name="language" content="English" />
     <meta name="distribution" content="global" />
     <meta property="og:title" content="<?php echo get_field('social_title'); ?>" />
@@ -51,5 +56,5 @@
     <meta name="twitter:card" content="summary_large_image" />
 
 </head>
-
+<body class="bg-offwhite font-raleway">
 

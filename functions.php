@@ -64,4 +64,5 @@ function custom_post_type_people() {
 
 }
 add_action( 'init', 'custom_post_type_people', 0 );
+
 ?>

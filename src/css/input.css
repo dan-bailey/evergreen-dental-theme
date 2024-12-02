@@ -3,7 +3,23 @@
 @tailwind utilities;
 
 h1, h2, h3, h4, h5, h6 {
-    @apply font-cabin;
+    @apply font-cabin inline-block pb-4;
+}
+
+h1 {
+    @apply text-5xl;
+}
+
+h2 {
+    @apply text-4xl font-cabin inline-block pb-4;
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+li {
+    @apply list-disc;
 }
 
 /***** DESKTOP MENU ITEMS *****/

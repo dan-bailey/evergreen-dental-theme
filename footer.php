@@ -1,4 +1,8 @@
-<footer>
+    <footer>
+        <?php
+        $a = get_field( 'contact_availability', 'options' );
+        $b = get_field( 'social_links', 'options' );
+        ?>
         <div class="container mx-auto text-center my-12">
             <a href="https://pay.balancecollect.com/m/evergreendentalmn" class="pay-button mx-auto">Make a Payment</a>
         </div>
@@ -11,23 +15,25 @@
             <div class="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center space-y-6 p-4 bg-forest">
                 <div>
                     <p class="text-offwhite text-left md:text-center">Evergreen Dental<br>
-                    7890 Mitchell Road<br>
-                    Eden Prairie, MN 55344<br><br>
-                    TEL: <a href="tel:9529377677">952-937-7677</a><br>
-                    FAX: 952-937-0232<br>
-                    <a href="mailto:smile@evergreendentalmn.com">smile@evergreendentalmn.com</a></p>
+                    <?php echo $a['street_address'] ?><br>
+                    <?php echo $a['city'] ?>, <?php echo $a['state'] ?> <?php echo $a['zip_code'] ?><br><br>
+                    TEL: <a href="tel:<?php echo $a['phone_number'] ?>"><?php echo $a['phone_number'] ?></a><br>
+                    FAX: <?php echo $a['fax_number'] ?><br>
+                    <a href="mailto:<?php echo $a['primary_email'] ?>"><?php echo $a['primary_email'] ?></a></p>
                 </div>
                 <div class="flex flex-col justify-center items-center space-y-4 p-4">
                     <div class="flex flex-row justify-between items-center space-x-6 p-4">
-                        <a href="https://www.instagram.com/evergreendentalmn" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/instagram.svg" alt="Instagram" class="h-8 w-8"></a>
-                        <a href="https://www.facebook.com/profile.php?id=100063811981573" target="_blank"></a><img src="<?php bloginfo('template_url'); ?>/assets/img/facebook.svg" alt="Facebook" class="h-8 w-8"></a>
+                        <a href="<?php echo $b['instagram_link'] ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/instagram.svg" alt="Instagram" class="h-8 w-8"></a>
+                        <a href="<?php echo $b['facebook_link'] ?>" target="_blank"></a><img src="<?php bloginfo('template_url'); ?>/assets/img/facebook.svg" alt="Facebook" class="h-8 w-8"></a>
                     </div>
                     <div class="text-offwhite">
                         <a class="footer-link-button" href="https://www.patientconnect365.com/Dentists/Minnesota/EdenPrairie/55344/Evergreen_Dental#" target="_blank">Patient Reviews</a>
                     </div>
                 </div>
             </div>
+            <div class="container mx-auto text-center">&copy; 2024, by Evergreen Dental, LLC.</div>
         </div>
+        
         
     </footer>
 
