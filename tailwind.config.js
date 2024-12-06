@@ -2,6 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{html,js,php}", "./index.html", "./node_modules/flowbite/**/*.js"],
   theme: {
+    extend: {
+      transitionDuration: {
+        '2000': '2000ms',
+        '3000': '3000ms',
+        '4000': '4000ms',
+      },
+      aspectRatio: {
+        '16/9': [16, 9],
+        '4/3': [4, 3],
+      },
+    },
     colors: {
       'forest': '#114e35',
       'mint': '#cce2ce',
@@ -16,8 +27,12 @@ module.exports = {
       raleway: ['Raleway', 'Helvetica', 'Roboto', 'sans-serif'],
     }
   },
+  corePlugins: {
+    aspectRatio: false,
+  },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 }
 

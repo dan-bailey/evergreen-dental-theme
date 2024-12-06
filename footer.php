@@ -1,3 +1,5 @@
+    </div>
+    </main>
     <footer>
         <?php
         $a = get_field( 'contact_availability', 'options' );
@@ -31,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto text-center">&copy; 2024, by Evergreen Dental, LLC.</div>
+            <div class="container mx-auto text-sm text-offwhite py-8 text-center">&copy; Copyright 2024, by Evergreen Dental, LLC.</div>
         </div>
         
         

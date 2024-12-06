@@ -2,28 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply font-raleway bg-offwhite text-blackish text-xl;
-}
+@layer components {
+    body {
+        @apply font-raleway bg-offwhite text-blackish;
+    }
 
-h1, h2, h3, h4, h5, h6 {
-    @apply font-cabin inline-block pb-4;
-}
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-cabin inline-block pb-4;
+    }
 
-h1 {
-    @apply text-5xl;
-}
+    h2 {
+        @apply text-5xl;
+    }
 
-h2 {
-    @apply text-4xl font-cabin inline-block pb-4;
-}
-
-h3 {
-    @apply text-2xl;
-}
-
-li {
-    @apply list-disc;
+    li {
+        @apply list-disc;
+    }
 }
 
 /***** DESKTOP MENU ITEMS *****/
@@ -43,5 +37,6 @@ li {
 .dropdown-menu {
     @apply font-cabin z-10 hidden bg-offwhite divide-y divide-gray-100 rounded-lg shadow w-44
 }
+
 
 /***** CAROUSEL STYLES *****/
