@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto text-sm text-offwhite py-8 text-center">&copy; Copyright 2024, by Evergreen Dental, LLC.</div>
+            <div class="container mx-auto py-6 text-sm text-offwhite text-center">&copy; Copyright 2024, by Evergreen Dental, LLC.<br><a href="/privacy-policy"></a>Privacy Policy</a></div>
         </div>
         
         

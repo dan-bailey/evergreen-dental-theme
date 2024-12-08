@@ -31,6 +31,7 @@
     <!-- WPHEAD --> 
     <?php wp_head(); ?>
     <!-- /WPHEAD -->
+     
     <!-- all the metas -->
     <?php 
         if (get_field('social_image')) {

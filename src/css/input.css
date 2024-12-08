@@ -16,27 +16,40 @@
     }
 
     li {
-        @apply list-disc;
+        @apply px-4 py-1 list-inside list-disc text-lg;
     }
+
+    blockquote {
+        @apply w-2/3 p-8 my-8 mx-auto rounded-xl bg-mint text-blackish;
+    }
+
+    blockquote p {
+        @apply text-lg py-1;
+    }
+
 }
 
 /***** DESKTOP MENU ITEMS *****/
 
 .nav-button {
-    @apply font-cabin text-offwhite bg-forest hover:bg-mint hover:text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center
+    @apply font-cabin text-offwhite bg-forest hover:bg-mint hover:text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center;
 }
 
 .pay-button {
-    @apply font-cabin bg-skyblue hover:bg-mint text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center
+    @apply font-cabin bg-skyblue hover:bg-mint text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center;
 }
 
 .footer-link-button {
-    @apply font-cabin border border-white text-offwhite hover:text-forest hover:bg-offwhite font-medium text-base rounded-lg text-base px-5 py-2.5 text-center
+    @apply font-cabin border border-white text-offwhite hover:text-forest hover:bg-offwhite font-medium text-base rounded-lg text-base px-5 py-2.5 text-center;
 }
 
 .dropdown-menu {
-    @apply font-cabin z-10 hidden bg-offwhite divide-y divide-gray-100 rounded-lg shadow w-44
+    @apply font-cabin z-10 hidden bg-offwhite divide-y divide-gray-100 rounded-lg shadow w-44;
 }
 
 
-/***** CAROUSEL STYLES *****/
+/***** FORM STYLING *****/
+
+#wpcf7-f148-p143-o1 {
+    @apply mx-auto;
+}
