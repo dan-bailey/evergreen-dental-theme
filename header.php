@@ -20,6 +20,8 @@
 
     <!-- CSS Compiled from Tailwind -->
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/style.css">
+    <!-- Flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <!-- necessary javascript -->
     <script src="<?php bloginfo('template_url'); ?>/assets/js/menu.js"></script>
     

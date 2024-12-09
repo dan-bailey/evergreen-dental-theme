@@ -23,6 +23,10 @@
         @apply text-4xl;
     }
 
+    blockquote.mint p {
+        @apply text-xl my-4;
+    }
+
     blockquote.mint ul {
         @apply list-disc ml-8 my-2;
     }
@@ -31,7 +35,7 @@
 /***** DESKTOP MENU ITEMS *****/
 
 .top-level-menu {
-    @apply text-offwhite hover:bg-mint hover:text-blackish focus:bg-mint focus:text-blackish font-medium rounded-lg text-sm px-4 py-2 lg:px-5 lg:py-2.5 mr-2;
+    @apply text-offwhite hover:bg-mint hover:text-blackish focus:bg-mint focus:text-blackish font-medium rounded-lg text-md px-4 py-2 lg:px-5 lg:py-2.5 mr-2;
 }
 
 .nav-button {
@@ -48,7 +52,3 @@
 
 
 /***** FORM STYLING *****/
-
-#wpcf7-f148-p143-o1 {
-    @apply mx-auto;
-}

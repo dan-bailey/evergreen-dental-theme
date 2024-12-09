@@ -5,9 +5,6 @@
         $a = get_field( 'contact_availability', 'options' );
         $b = get_field( 'social_links', 'options' );
         ?>
-        <div class="container mx-auto text-center my-12">
-            <a href="https://pay.balancecollect.com/m/evergreendentalmn" class="pay-button mx-auto">Make a Payment</a>
-        </div>
         <div class="container mx-auto flex flex-col md:flex-row justify-end self-end md:justify-between items-center space-y-6 md:space-y-0 p-4 bg-offwhite">
             <img class="h-12 mt-0" src="<?php bloginfo('template_url'); ?>/assets/img/american-dental-association-logo.svg" alt="American Dental Association" />
             <img class="h-12 mt-0" src="<?php bloginfo('template_url'); ?>/assets/img/top_dentist_hof.svg" alt="Twin Cities Top Dentist Hall of Fame" />
@@ -31,9 +28,12 @@
                     <div class="text-offwhite">
                         <a class="footer-link-button" href="https://www.patientconnect365.com/Dentists/Minnesota/EdenPrairie/55344/Evergreen_Dental#" target="_blank">Patient Reviews</a>
                     </div>
+                    <div>
+                        <a href="https://pay.balancecollect.com/m/evergreendentalmn" class="pay-button">Make a Payment</a>
+                    </div>
                 </div>
             </div>
-            <div class="container mx-auto py-6 text-sm text-offwhite text-center">&copy; Copyright 2024, by Evergreen Dental, LLC.<br><a href="/privacy-policy"></a>Privacy Policy</a></div>
+            <div class="container mx-auto py-6 text-sm text-offwhite text-center">&copy; Copyright 2024, by Evergreen Dental, LLC.<br><a href="/privacy-policy">Privacy Policy</a></div>
         </div>
         
         
