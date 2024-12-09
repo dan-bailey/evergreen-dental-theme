@@ -1,3 +1,4 @@
+<!-- archive.php -->
 <?php get_header(); ?>
 <header class="header">
 <h1 class="entry-title" itemprop="name"><?php the_archive_title(); ?></h1>
