@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+
     body {
         @apply font-raleway bg-offwhite text-blackish;
     }
@@ -12,24 +12,27 @@
     }
 
     h2 {
-        @apply text-5xl;
+        @apply text-4xl;
     }
 
-    li {
-        @apply px-4 py-1 list-inside list-disc text-lg;
+    blockquote.mint {
+        @apply w-2/3 p-8 my-8 mx-auto rounded-xl bg-mint text-blackish text-xl leading-relaxed tracking-wide;
     }
 
-    blockquote {
-        @apply w-2/3 p-8 my-8 mx-auto rounded-xl bg-mint text-blackish;
+    blockquote.mint h2 {
+        @apply text-4xl;
     }
 
-    blockquote p {
-        @apply text-lg py-1;
+    blockquote.mint ul {
+        @apply list-disc ml-8 my-2;
     }
 
-}
 
 /***** DESKTOP MENU ITEMS *****/
+
+.top-level-menu {
+    @apply text-offwhite hover:bg-mint hover:text-blackish focus:bg-mint focus:text-blackish font-medium rounded-lg text-sm px-4 py-2 lg:px-5 lg:py-2.5 mr-2;
+}
 
 .nav-button {
     @apply font-cabin text-offwhite bg-forest hover:bg-mint hover:text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center;
@@ -41,10 +44,6 @@
 
 .footer-link-button {
     @apply font-cabin border border-white text-offwhite hover:text-forest hover:bg-offwhite font-medium text-base rounded-lg text-base px-5 py-2.5 text-center;
-}
-
-.dropdown-menu {
-    @apply font-cabin z-10 hidden bg-offwhite divide-y divide-gray-100 rounded-lg shadow w-44;
 }
 
 
