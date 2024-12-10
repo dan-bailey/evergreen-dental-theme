@@ -1589,6 +1589,11 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -1917,10 +1922,11 @@ blockquote.mint h2 {
 }
 
 blockquote.mint p {
-  margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  line-height: 1.625;
+  letter-spacing: 0.025em;
 }
 
 blockquote.mint ul {
@@ -1928,6 +1934,27 @@ blockquote.mint ul {
   margin-bottom: 0.5rem;
   margin-left: 2rem;
   list-style-type: disc;
+}
+
+/***** STUFF FOR TEAM MEMBERS INDIVIDUAL PAGE *****/
+
+#team-member p {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  line-height: 1.625;
+  letter-spacing: 0.025em;
+}
+
+#team-member ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  list-style-type: disc;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  line-height: 1.625;
+  letter-spacing: 0.025em;
 }
 
 /***** DESKTOP MENU ITEMS *****/
@@ -2259,6 +2286,10 @@ blockquote.mint ul {
 
   .sm\:h-9 {
     height: 2.25rem;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:rounded-none {

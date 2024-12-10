@@ -27,13 +27,21 @@ blockquote.mint h2 {
 }
 
 blockquote.mint p {
-    @apply text-xl my-4;
+    @apply text-xl mb-4 leading-relaxed tracking-wide;
 }
 
 blockquote.mint ul {
     @apply list-disc ml-8 my-2;
 }
+/***** STUFF FOR TEAM MEMBERS INDIVIDUAL PAGE *****/
 
+#team-member p {
+    @apply text-xl mb-4 leading-relaxed tracking-wide;
+}
+
+#team-member ul {
+    @apply text-xl leading-relaxed tracking-wide list-disc ml-8 my-2;
+}
 
 /***** DESKTOP MENU ITEMS *****/
 
