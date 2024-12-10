@@ -1,4 +1,7 @@
 <?php
+// register the top nav area
+register_nav_menu( "evergreen-nav", "Main Menu" );
+
 // part of the trifecta of shit necessary for gutenberg and featured images
 // this next line adds it to the 'team' custom post type
 add_theme_support( 'post-thumbnails', array( 'team' ));
@@ -56,7 +59,7 @@ function custom_post_type_team() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => 'team',
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'rewrite'               => $rewrite,

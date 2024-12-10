@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    @apply m-0 p-0;
+}
 
 body {
-    @apply font-raleway bg-offwhite text-blackish;
+    @apply m-0 p-0 font-raleway bg-offwhite text-blackish;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,7 +42,11 @@ blockquote.mint ul {
 }
 
 .pay-button {
-    @apply font-cabin bg-skyblue hover:bg-mint text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center;
+    @apply font-cabin text-offwhite bg-skyblue hover:bg-mint hover:text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center;
+}
+
+.pay-button-footer {
+    @apply font-cabin text-offwhite bg-skyblue hover:bg-mint hover:text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center;
 }
 
 .footer-link-button {
