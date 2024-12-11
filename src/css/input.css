@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 html {
-    @apply m-0 p-0;
+    margin-top: 0;
 }
 
 body {
-    @apply m-0 p-0 font-raleway bg-offwhite text-blackish;
+    @apply mx-0 my-0 p-0 font-raleway bg-offwhite text-blackish;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,7 +18,23 @@ h2 {
     @apply text-4xl;
 }
 
-blockquote.mint {
+/**** GUTSLIDER ****/
+h2.gutslider-title {
+    @apply font-cabin text-4xl;
+}
+
+p.gutslider-description {
+    @apply text-xl;
+}
+
+a.gutslider-cta {
+    @apply font-raleway text-xl hover:bg-mint hover:text-blackish;
+}
+
+
+
+blockquote.mint,
+blockquote.wp-block-evergreen-mintbox {
     @apply w-2/3 p-8 my-8 mx-auto rounded-xl bg-mint text-blackish text-xl leading-relaxed tracking-wide;
 }
 
@@ -33,6 +49,19 @@ blockquote.mint p {
 blockquote.mint ul {
     @apply list-disc ml-8 my-2;
 }
+
+blockquote.wp-block-evergreen-mintbox h2 {
+    @apply text-4xl;
+}
+
+blockquote.wp-block-evergreen-mintbox p {
+    @apply text-xl mb-4 leading-relaxed tracking-wide;
+}
+
+blockquote.wp-block-evergreen-mintbox ul {
+    @apply list-disc ml-8 my-2;
+}
+
 /***** STUFF FOR TEAM MEMBERS INDIVIDUAL PAGE *****/
 
 #team-member p {

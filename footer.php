@@ -1,4 +1,3 @@
-    
     </main>
     <footer>
         <?php
@@ -38,44 +37,8 @@
         
         
     </footer>
-
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Evergreen Dental",
-          "image": "ImageURL",
-          "@id": "",
-          "url": "http://url",
-          "telephone": "phone",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Street",
-            "addressLocality": "City",
-            "addressRegion": "MN",
-            "postalCode": "ZIP",
-            "addressCountry": "US"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": lat,
-            "longitude": long
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "17:00"
-          } 
-        }
-    </script>
 <!-- more flowbite -->
+<?php wp_footer(); ?>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>    
 </body>
 </html>

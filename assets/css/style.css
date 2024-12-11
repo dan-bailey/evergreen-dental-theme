@@ -1873,12 +1873,14 @@ input:checked + .toggle-bg {
 }
 
 html {
-  margin: 0px;
-  padding: 0px;
+  margin-top: 0;
 }
 
 body {
-  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   --tw-bg-opacity: 1;
   background-color: rgb(243 243 243 / var(--tw-bg-opacity));
   padding: 0px;
@@ -1898,7 +1900,34 @@ h2 {
   line-height: 2.5rem;
 }
 
-blockquote.mint {
+/**** GUTSLIDER ****/
+
+h2.gutslider-title {
+  font-family: Cabin, Arial, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+p.gutslider-description {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+a.gutslider-cta {
+  font-family: Raleway, Helvetica, Roboto, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+a.gutslider-cta:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 226 206 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(4 12 28 / var(--tw-text-opacity));
+}
+
+blockquote.mint,
+blockquote.wp-block-evergreen-mintbox {
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -1930,6 +1959,26 @@ blockquote.mint p {
 }
 
 blockquote.mint ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  list-style-type: disc;
+}
+
+blockquote.wp-block-evergreen-mintbox h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+blockquote.wp-block-evergreen-mintbox p {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  line-height: 1.625;
+  letter-spacing: 0.025em;
+}
+
+blockquote.wp-block-evergreen-mintbox ul {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 2rem;
