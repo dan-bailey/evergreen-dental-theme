@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php $x = get_field( 'contact_availability', 'options' ); ?> 
 <html <?php language_attributes(); ?>>
 <head>
     <title><?php get_bloginfo('name'); ?></title>
@@ -61,11 +62,8 @@
         <nav class="bg-forest text-offwhite px-4 lg:px-6 py-2.5 mt-0">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
                 <!-- logo -->
-                <a href="/" class="hidden md:block flex items-center">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/tooth_white_full.svg" class="mr-3 h-6 sm:h-9" alt="Evergreen Dental Full Logo" />
-                </a>
-                <a href="/" class="block md:hidden flex items-center">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/tooth_white.svg" class="mr-3 h-6 sm:h-9" alt="Evergreen Dental Icon Logo" />
+                <a href="/" class="flex items-center">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/tooth_white_full.svg" class="mr-3 h-6 h-9" alt="Evergreen Dental Full Logo" />
                 </a>
                 <!-- /logo -->
                 <!-- navbutton -->
@@ -122,12 +120,11 @@
 <main>
 <!-- contact banner -->
 <div class="w-full bg-mint m-none">
-            <div class="container mx-auto">
-                <div class="py-2.5 flex flex-row justify-between text-md font-raleway text-forest">
-                    <p class="inline-block px-2.5 sm:px-none"><b>Phone:</b> 952-937-7677</p>
-                    <p class="inline-block hidden md:block"><b>Fax:</b> 952-937-0232</p>
-                    <p class="inline-block px-2.5 sm:px-none"><a class="underline" href="mailto:smile@evergreendentalmn.com">smile@evergreendentalmn.com</a></p>
-                </div>
-            </div>
+    <div class="container mx-auto">
+        <div class="py-2.5 flex flex-row justify-between text-md font-raleway text-forest">
+        <p class="inline-block px-2.5 sm:px-none"><b>Phone:</b> <?php echo $x['phone_number']; ?></p>
+            <p class="inline-block px-2.5 sm:px-none"><b>Fax:</b> <?php echo $x['fax_number']; ?></p>
         </div>
+    </div>
+</div>
     

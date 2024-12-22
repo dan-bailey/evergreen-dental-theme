@@ -31,35 +31,35 @@ a.gutslider-cta {
     @apply font-raleway text-xl hover:bg-mint hover:text-blackish;
 }
 
+/* STYLING FOR MINTYBOX BLOCK */
 
-
-blockquote.mint,
-blockquote.wp-block-evergreen-mintbox {
+/* computed and rendered in the block 
+blockquote.wp-block-evergreen-mintybox {
     @apply w-2/3 p-8 my-8 mx-auto rounded-xl bg-mint text-blackish text-xl leading-relaxed tracking-wide;
 }
+*/
 
-blockquote.mint h2 {
-    @apply text-4xl;
+blockquote.wp-block-evergreen-mintybox h2.wp-block-heading {
+    @apply text-blackish text-2xl md:text-3xl;
 }
 
-blockquote.mint p {
-    @apply text-xl mb-4 leading-relaxed tracking-wide;
+blockquote.wp-block-evergreen-mintybox p {
+    @apply text-blackish text-base md:text-lg mb-4 leading-relaxed tracking-wide;
 }
 
-blockquote.mint ul {
-    @apply list-disc ml-8 my-2;
+blockquote.wp-block-evergreen-mintybox ul {
+    @apply text-base md:text-lg list-disc ml-8 my-2;
 }
 
-blockquote.wp-block-evergreen-mintbox h2 {
-    @apply text-4xl;
+
+/***** STYLING FOR STANDARD CONTAINER BOX *****/
+.wp-block-evergreen-containerbox {
+    @apply container mx-auto my-6 px-2.5;
 }
 
-blockquote.wp-block-evergreen-mintbox p {
-    @apply text-xl mb-4 leading-relaxed tracking-wide;
-}
-
-blockquote.wp-block-evergreen-mintbox ul {
-    @apply list-disc ml-8 my-2;
+/***** STYLING FOR STANDARD CONTAINER BOX *****/
+.wp-block-evergreen-fullwidebox {
+    @apply w-full m-0 px-2;
 }
 
 /***** STUFF FOR TEAM MEMBERS INDIVIDUAL PAGE *****/
@@ -79,11 +79,11 @@ blockquote.wp-block-evergreen-mintbox ul {
 }
 
 .pay-button {
-    @apply font-cabin text-offwhite bg-skyblue hover:bg-mint hover:text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center;
+    @apply font-cabin text-blackish bg-skyblue hover:bg-mint font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center;
 }
 
 .pay-button-footer {
-    @apply font-cabin text-offwhite bg-skyblue hover:bg-mint hover:text-blackish font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center;
+    @apply font-cabin text-blackish bg-skyblue hover:bg-mint font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center;
 }
 
 .footer-link-button {
@@ -94,5 +94,60 @@ blockquote.wp-block-evergreen-mintbox ul {
     @apply font-cabin text-offwhite hover:bg-mint hover:text-blackish rounded-lg text-base px-4 py-2 lg:px-5 lg:py-2.5;
 }
 
+/***** FLEXSPACE *****/
+.wp-block-evergreen-flexspace {
+    @apply flex flex-col md:flex-row justify-center place-self-stretch gap-4;
+}
+
+/***** PICTURE CARD STYLE *****/
+.wp-block-evergreen-picturecard,
+.wp-block-evergreen-textcard {
+    @apply max-w-lg lg:max-w-sm mx-6 bg-white border border-gray-200 rounded-lg shadow mx-auto;
+}
+
+.wp-block-evergreen-picturecard img {
+    @apply rounded-t-lg;
+}
+
+.wp-block-evergreen-picturecard h5  {
+    @apply px-4 pt-2 text-2xl text-blackish tracking-wide leading-relaxed;
+}
+
+.wp-block-evergreen-picturecard p  {
+    @apply px-4 pb-2 text-blackish tracking-wide leading-relaxed;
+}
+
+.button-card-link {
+    @apply inline-flex items-center ml-4 mb-4 px-3 py-2 text-sm font-medium text-center text-offwhite hover:text-blackish bg-forest rounded-lg hover:bg-mint;
+}
+
+/***** TEXT CARD STYLE *****/
+
+.wp-block-evergreen-textcard {
+    @apply max-w-lg lg:max-w-sm mx-6 bg-white border p-4 border-gray-200 rounded-lg shadow mx-auto;
+}
+
+.wp-block-evergreen-textcard h5 {
+    @apply text-2xl text-blackish tracking-wide leading-relaxed;
+}
+
+.wp-block-evergreen-textcard p {
+    @apply text-blackish tracking-wide leading-relaxed;
+}
+
+.wp-block-evergreen-textcard ul {
+    @apply list-disc ml-8 p-4;
+}
 
 /***** FORM STYLING *****/
+.wpcf7-form p {
+    @apply mb-2;
+}
+
+.wpcf7-form label {
+    @apply text-blackish text-base;
+}
+
+.wpcf7-form input[type="submit"] {
+    @apply px-3 py-2 rounded-lg text-base text-center text-offwhite hover:text-blackish bg-forest hover:bg-mint;
+}
