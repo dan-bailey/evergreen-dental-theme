@@ -22,7 +22,7 @@
                 <div class="flex flex-col justify-center items-center space-y-4 p-4">
                     <div class="flex flex-row justify-between items-center space-x-6 p-4">
                         <a href="<?php echo $b['instagram_link'] ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/instagram.svg" alt="Instagram" class="h-8 w-8"></a>
-                        <a href="<?php echo $b['facebook_link'] ?>" target="_blank"></a><img src="<?php bloginfo('template_url'); ?>/assets/img/facebook.svg" alt="Facebook" class="h-8 w-8"></a>
+                        <a href="<?php echo $b['facebook_link'] ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/facebook.svg" alt="Facebook" class="h-8 w-8"></a>
                     </div>
                     <div class="text-offwhite">
                         <a class="footer-link-button" href="https://www.patientconnect365.com/Dentists/Minnesota/EdenPrairie/55344/Evergreen_Dental#" target="_blank">Patient Reviews</a>

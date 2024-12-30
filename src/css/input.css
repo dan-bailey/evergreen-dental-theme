@@ -54,7 +54,7 @@ blockquote.wp-block-evergreen-mintybox ul {
 
 /***** STYLING FOR STANDARD CONTAINER BOX *****/
 .wp-block-evergreen-containerbox {
-    @apply container mx-auto my-6 px-2.5;
+    @apply container mx-auto my-6 px-4;
 }
 
 /***** STYLING FOR STANDARD CONTAINER BOX *****/

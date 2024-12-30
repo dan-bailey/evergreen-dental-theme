@@ -1,9 +1,7 @@
 <!-- archive-team.php -->
 <?php get_header(); ?>
-<!-- hero -->
-<div class="w-full bg-forest text-offwhite text-center py-12"> 
-    <h2 class="text-3xl font-cabin text-offwhite">Meet Our Team</h1>
-</div>
+<!-- hero fragment -->
+<?php cn_include_content(384) ?>
  <!-- team members grid -->
  <section>
         <div class="container mx-auto my-6">
