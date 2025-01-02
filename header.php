@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <?php $x = get_field( 'contact_availability', 'options' ); ?> 
 <html <?php language_attributes(); ?>>
+<?php 
+    /* figure out page title */
+    $page_title = get_the_title();
+    if (is_post_type_archive('team')) {
+        $page_title = 'Our Team';
+    }
+?>
 <head>
-    <title><?php get_bloginfo('name'); ?></title>
+    <title><?php echo get_bloginfo('name'); ?> || <?php echo $page_title ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php

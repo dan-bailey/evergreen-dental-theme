@@ -4,11 +4,13 @@
         $a = get_field( 'contact_availability', 'options' );
         $b = get_field( 'social_links', 'options' );
         ?>
+        <? if (is_front_page()) { ?>
         <div class="container mx-auto flex flex-col md:flex-row justify-end self-end md:justify-between items-center space-y-6 md:space-y-0 p-4 bg-offwhite">
             <img class="h-12 mt-0" src="<?php bloginfo('template_url'); ?>/assets/img/american-dental-association-logo.svg" alt="American Dental Association" />
             <img class="h-12 mt-0" src="<?php bloginfo('template_url'); ?>/assets/img/top_dentist_hof.svg" alt="Twin Cities Top Dentist Hall of Fame" />
             <img class="h-12 mt-0" src="<?php bloginfo('template_url'); ?>/assets/img/agf-logo.svg" alt="Academy of General Dentistry" />
         </div>
+        <? } ?>
         <div class="bg-forest">
             <div class="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center space-y-6 p-4 bg-forest">
                 <div>
@@ -28,7 +30,7 @@
                         <a class="footer-link-button" href="https://www.patientconnect365.com/Dentists/Minnesota/EdenPrairie/55344/Evergreen_Dental#" target="_blank">Patient Reviews</a>
                     </div>
                     <div>
-                        <a href="https://pay.balancecollect.com/m/evergreendentalmn" class="pay-button">Make a Payment</a>
+                        <a href="https://pay.balancecollect.com/m/evergreendentalmn" class="pay-button" target="_blank">Make a Payment</a>
                     </div>
                 </div>
             </div>
@@ -40,5 +42,33 @@
 <!-- more flowbite -->
 <?php wp_footer(); ?>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Evergreen Dental",
+  "image": "https://www.evergreendentalmn.com/wp-content/uploads/2024/12/team_pic_trees_1920.jpg",
+  "@id": "",
+  "url": "https://evergreendentalmn.com",
+  "telephone": "952-937-7677",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7890 Mitchell Road",
+    "addressLocality": "Eden Prairie",
+    "addressRegion": "MN",
+    "postalCode": "55344",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 44.8608318,
+    "longitude": -93.4606337
+  } ,
+  "sameAs": [
+    "https://www.instagram.com/evergreendentalmn",
+    "https://www.facebook.com/p/Evergreen-Dental-100063811981573/"
+  ] 
+}
+</script>
 </body>
 </html>

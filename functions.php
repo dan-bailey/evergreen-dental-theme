@@ -81,4 +81,7 @@ function cn_include_content($pid) {
     echo $content;
 }
 
+/* support title tag */
+add_theme_support( 'title-tag' );
+
 ?>
